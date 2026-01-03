@@ -253,8 +253,4 @@ function searchLIst() {
         searchCloseBtn.classList.remove('open');
     })
 
-
-
-
-
 }
