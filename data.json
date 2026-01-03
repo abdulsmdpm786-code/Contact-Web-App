@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "Abdul",
+        "place": "Kozhikode",
+        "number": "9876543210"
+    },
+    {
+        "id": 2,
+        "name": "Salman",
+        "place": "Kollam",
+        "number": "1231231234"
+    },
+    {
+        "id": 3,
+        "name": "Ajmal",
+        "place": "Aluva",
+        "number": "0000000"
+
+    }
+]

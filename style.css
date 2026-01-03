@@ -1,0 +1,338 @@
+.html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #adb5bd;
+}
+
+.global {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.phone-div {
+    width: 85%;
+    height: 40rem;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.head {
+    width: 100%;
+    height: 10rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    color: #0466c8;
+}
+
+.text i {
+    font-size: 50px;
+}
+
+.text h1 {
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.search-div {
+    display: flex;
+    gap: 20px;
+}
+
+.search input {
+    width: 25rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: 1px solid  #0466c8;
+    outline: none;
+}
+
+.search button {
+    /* padding: 5px; */
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #0466c8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #055aae;
+}
+
+#closeBtn {
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+#closeBtn.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+#closeBtn:hover {
+    background-color: #bd0b0b;
+}
+
+
+.btn button {
+    background-color: #0466c8;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #055aae;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 15px;
+
+}
+
+.contact {
+    width: 90%;
+    height: 4rem;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    overflow: hidden;
+
+    cursor: pointer;
+
+}
+
+/* .contact:hover {
+    background-color: #0466c8;
+
+}
+
+.contact ul li:hover {
+    color: white;
+} */
+
+.contact ul {
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 29px;
+    font-size: 23px;
+}
+
+.contact ul li {
+    list-style: none;
+    font-family: "Poppins";
+    color: #0466c8;
+}
+
+.contact-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+}
+
+.contact-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.contact-card {
+    background-color: #ced4da;
+    width: 30rem;
+    height: 30rem;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transform: scale(0.8);
+    /* Start: 80% size (Small) */
+    transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.contact-head {
+    width: 100%;
+    height: 7rem;
+    background-color: #0466c8;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-head h1 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.contact-head i {
+    color: white;
+    margin-top: 35px;
+    margin-right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.contact-head i:hover {
+    color: #ced4da;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.label-1 {
+    color: #0466c8;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    position: absolute;
+    left: 50px;
+    top: 20px;
+
+}
+
+.input-section input {
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #dfe3e7;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-top: 27px;
+    font-size: 15px;
+}
+
+.label-2 {
+    color: #0466c8;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    position: absolute;
+    left: 50px;
+    top: 110px;
+}
+
+.label-3 {
+    color: #0466c8;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    position: absolute;
+    left: 50px;
+    top: 200px;
+}
+
+.btn-section button {
+    background-color: #0466c8;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn-section button:hover {
+    background-color: #055aae;
+}
+
+.fa-solid {
+    margin-right: 5px;
+}
+
+.edit-section button {
+    background-color: #00050a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn-footer {
+    display: flex;
+}
+
+.dlt-section button {
+    background-color: #ed0909;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.dlt-section button:hover {
+    background-color: #9f0606;
+}

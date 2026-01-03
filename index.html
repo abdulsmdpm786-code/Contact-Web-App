@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Phone Book</title>
+</head>
+
+<body>
+    <div class="global">
+        <div class="phone-div">
+
+            <div class="head">
+                <div class="text">
+                    <i class="fa-solid fa-address-book"></i>
+                    <h1>Contact Book</h1>
+                </div>
+                <div class="search-div">
+                    <div class="btn">
+                        <button id="modalBtn">+ Add People</button>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search Contact Here...." id="searchText">
+                        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button id="closeBtn" ><i class="fa-solid fa-xmark"></i></button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ............................................................................. list show ............................................................... -->
+
+            <div class="contact-list" id="listShow">
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ....................................................................add modal.......................................................................... -->
+    <div class="contact-wrapper" id="contactWrapper">
+
+        <div class="contact-card" id="modalBox">
+            <div class="contact-head">
+                <h1>Contact Card</h1>
+                <i class="fa-regular fa-circle-xmark" id="closeModal"></i>
+            </div>
+            <div class="input-section">
+                <label for="addName" class="label-1">Name</label> <br>
+                <input type="text" placeholder="Enter Name..." id="addName" required>
+
+                <label for="addPlace" class="label-2">Place</label> <br>
+                <input type="text" placeholder="Enter Place..." id="addPlace" required>
+
+                <label for="addNumber" class="label-3">Number</label> <br>
+                <input type="text" placeholder="Enter Number..." id="addNumber" required>
+            </div>
+            <div class="btn-section">
+                <button id="addBtn">+ Add</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ....................................................................edit modal.......................................................................... -->
+    <div class="contact-wrapper" id="editWrapper">
+
+        <div class="contact-card" id="modalDlt">
+            <div class="contact-head">
+                <h1>Contact Edit</h1>
+                <i class="fa-regular fa-circle-xmark" id="editModal"></i>
+            </div>
+            <div class="input-section">
+                <label for="editName" class="label-1">Name</label> <br>
+                <input type="text" placeholder="Enter Name..." id="editName">
+
+                <label for="editPlace" class="label-2">Place</label> <br>
+                <input type="text" placeholder="Enter Place..." id="editPlace">
+
+                <label for="editNumber" class="label-3">Number</label> <br>
+                <input type="text" placeholder="Enter Number..." id="editNumber">
+            </div>
+
+            <div class="btn-footer">
+                <div class="edit-section">
+                    <button class="edit-btn" id="editBtn"><i class="fa-solid fa-pen"></i>Edit</button>
+                </div>
+                <div class="dlt-section">
+                    <button class="edit-btn" id="dltBtn"><i class="fa-solid fa-trash"></i>Delete</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
