@@ -251,6 +251,7 @@ function searchLIst() {
     searchCloseBtn.addEventListener('click', () => {
         renderList();
         searchCloseBtn.classList.remove('open');
+        searchValue.value = "";
     })
 
 }
